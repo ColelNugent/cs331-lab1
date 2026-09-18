@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+        <h1>Create an Account</h1>
+        <form action="/signup" method="post">
+          <div class="field">
+            <label for="username">Create Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="field">
+            <label for="password">Create Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <h4>Answer Security Questions</h4>
+          <div class="field">
+            <label for="question1">In what city were you born?</label>
+            <input type="text" id="question1" name="question1" required>
+          </div>
+          <div class="field">
+            <label for="question2">What was the name of your first school?</label>
+            <input type="text" id="question2" name="question2" required>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="index.html">Log in</a>.</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
